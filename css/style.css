@@ -1,0 +1,75 @@
+@charset "utf-8";
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	color: #000;
+	text-decoration: none;
+}
+
+.container {
+	max-width: 1084px;
+	padding: 0 40px;
+	margin: 0 auto;
+}
+
+header {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+header > .container {
+	height: 110px;
+	display: flex;
+	align-items: center;
+	max-width: none;
+	padding: 0 60px;
+}
+
+/*ロゴ*/
+.area_logo_header .logo {
+	display: block;
+}
+
+.area_logo_header img {
+	height: 60px;
+	vertical-align: bottom;
+}
+
+/*ヘッダーナビ*/
+.nav_header {
+	margin: 0 0 0 auto;
+}
+.list_nav_header {
+	display: flex;
+	align-items: center;
+	margin: 0 -15px;
+}
+
+.list_nav_header > li {
+	padding: 0 15px;
+}
+
+.list_nav_header a {
+	color: #fff;
+	font: 500 18px/1em 'futura', 'noto sans japanese',sans-serif;
+}
+
+/*トップビュー*/
+.area_top_view {
+	background: url(../image/bg/bg_view.jpg) no-repeat bottom center;
+	background-size: cover;
+}
+
+.area_top_view > .container {
+	height: 700px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
