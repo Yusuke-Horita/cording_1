@@ -60,6 +60,36 @@ header > .container {
 	font: 500 18px/1em 'futura', 'noto sans japanese',sans-serif;
 }
 
+[class*="btn_ico"] {
+  color: #fff;
+  font: 400 18px/1em 'futura PT', 'noto sans japanese',sans-serif;
+  display: flex;
+  align-items: center;
+  height: 36px;
+  padding: 0 30px 0 60px;
+  background: #0cf;
+  box-shadow: 0px 7px 6px -4px rgba(16,61,72,.2);
+  position: relative;
+}
+
+[class*="btn_ico"]:before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+}
+
+[class*="btn_ico"][class*="mail"]:before {
+  background: url(../image/ico/ico_mail.svg);
+}
+
 /*トップビュー*/
 .area_top_view {
 	background: url(../image/bg/bg_view.jpg) no-repeat bottom center;
