@@ -103,3 +103,30 @@ header > .container {
 	align-items: center;
 	justify-content: center;
 }
+
+.area_top_view img {
+  height: 60px;
+  vertical-align: bottom;
+}
+
+.area_top_view .title {
+  color: #fff;
+  font: 400 27px/1em 'futura PT', 'noto sans japanese',sans-serif;
+  letter-spacing: .04em;
+  margin: 20px 0 0;
+  padding: 0 0 0 40px;
+  position: relative;
+}
+
+.area_top_view .title:before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: url(../img/ico/ico_write.svg) no-repeat center center;
+  background-size: contain;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
